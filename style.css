@@ -94,16 +94,37 @@
     background-color: #e3e8f1;
     grid-row:2/3;
     grid-column:2/3;
+    padding: 1rem;
 
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap:5rem;
-    align-items: center;
 }
 
 .project-container {
     grid-row:1/3;
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    gap:1rem;
+}
+
+.card {
+    
+    border-color: rgb(246, 206, 95);
+    border-width: 1rem;
+    border-style: none none none solid;
+
+    padding: 1rem;
+    background-color:white;
 }
 
 .announcement-container {
@@ -113,6 +134,10 @@
 .trending-contianer{
     grid-column: 2/3;
     grid-row: 2/3;
+}
+
+.title, .card-title {
+    font-weight: bold;
 }
 
 #search-box{
