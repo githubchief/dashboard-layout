@@ -95,11 +95,12 @@
     grid-row:2/3;
     grid-column:2/3;
     padding: 1rem;
+    padding-bottom: 5rem;
 
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap:5rem;
+    gap:1rem;
 }
 
 .project-container {
@@ -120,20 +121,83 @@
 .card {
     
     border-color: rgb(246, 206, 95);
-    border-width: 1rem;
+    border-width: 0.3rem;
     border-style: none none none solid;
-
+    border-radius: 0.5rem;
     padding: 1rem;
     background-color:white;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap:1rem;
+}
+
+.card-links{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.card-links ul {
+    display: grid;
+    gap:1rem;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .announcement-container {
     grid-column: 2/3;
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 1rem;    
 }
 
-.trending-contianer{
+.announcement-card{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.announcement-card div{
+    margin: 1rem;
+    padding: 0 0 1rem 0;
+}
+
+.announcement-card > :not(:last-child){
+    border-color: #e3e8f1;
+    border-width: 0.17rem;
+    border-bottom-width: 50%;
+    border-style: none none solid none;
+}
+
+.trending-container{
     grid-column: 2/3;
     grid-row: 2/3;
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 1rem;    
+}
+
+.trending-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.trending-list{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.trending-card-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-self:start;
 }
 
 .title, .card-title {
